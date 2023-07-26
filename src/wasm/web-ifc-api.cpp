@@ -910,6 +910,13 @@ void SetLogLevel(int levelArg)
     webifc::utility::setLogLevel(levelArg);
 }
 
+std::string GetUnsupportedTypes()
+{
+    auto unsuppertedTypes = webifc::geometry::IfcGeometryProcessor::GetUnsuppertedTypes();
+
+    return unsuppertedTypes;
+}
+
 EMSCRIPTEN_BINDINGS(my_module) {
 
     emscripten::class_<webifc::geometry::IfcGeometry>("IfcGeometry")
