@@ -1,0 +1,39 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.jslib": "javascript",
+			"xstring": "cpp",
+			"iostream": "cpp",
+			"iosfwd": "cpp",
+			"ratio": "cpp",
+			"random": "cpp",
+			"__hash_table": "cpp",
+			"__tree": "cpp",
+			"__tuple": "cpp",
+			"array": "cpp",
+			"type_traits": "cpp",
+			"limits": "cpp",
+			"tuple": "cpp",
+			"variant": "cpp",
+			"chrono": "cpp",
+			"compare": "cpp",
+			"cstddef": "cpp",
+			"filesystem": "cpp",
+			"vector": "cpp"
+		},
+		"cmake.cmakePath": "/usr/local/bin/cmake",
+	},
+	"extensions": {
+		"recommendations": [
+			"twxs.cmake",
+			"ms-vscode.cpptools",
+			"ms-vscode.cpptools-extension-pack",
+			"ms-vscode.cpptools-themes"
+		]
+	},
+}
