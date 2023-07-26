@@ -1067,4 +1067,5 @@ EMSCRIPTEN_BINDINGS(my_module) {
     emscripten::function("GetTypeCodeFromName", &GetTypeCodeFromName);
     emscripten::function("IsIfcElement", &IsIfcElement);
     emscripten::function("GetVersion", &GetVersion);
+    emscripten::function("GetUnsupportedTypes", &GetUnsupportedTypes);
 }
