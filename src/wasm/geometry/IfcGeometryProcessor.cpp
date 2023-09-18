@@ -999,7 +999,6 @@ namespace webifc::geometry
                 
                 auto code = line.ifcType;
                 std::string type = _schemaManager.IfcTypeCodeToType(code);
-
                 std::cout << "[Extended LOG] Not found ifc type: " + type + " (" + std::to_string(code) + ")" << std::endl;
 
                 if (unsuppertedTypes.find(type) == unsuppertedTypes.end())

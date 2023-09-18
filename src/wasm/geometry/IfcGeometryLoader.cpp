@@ -735,6 +735,10 @@ namespace webifc::geometry
       }
       default:
         _errorHandler.ReportError(utility::LoaderErrorType::UNSUPPORTED_TYPE, "unexpected style type", expressID, line.ifcType);
+        
+        auto code = line.ifcType;
+        std::string type = _schemaManager.IfcTypeCodeToType(code);
+        std::cout << "[Extended LOG] Not found style type: " + type + " (" + std::to_string(code) + ")" << std::endl;
         break;
       }
 
@@ -2443,6 +2447,11 @@ glm::dmat3 IfcGeometryLoader::GetAxis2Placement2D(uint32_t expressID) const
     }
   default:
     _errorHandler.ReportError(utility::LoaderErrorType::UNSUPPORTED_TYPE, "unexpected 2D placement type", expressID, line.ifcType);
+
+    auto code = line.ifcType;
+    std::string type = _schemaManager.IfcTypeCodeToType(code);
+    std::cout << "[Extended LOG] Not found style type: " + type + " (" + std::to_string(code) + ")" << std::endl;
+
     break;
   }
   return glm::dmat3();
